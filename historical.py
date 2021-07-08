@@ -47,7 +47,7 @@ def get_descriptions():
     tickers =["TSLA","AAPL","AMZN","MSFT","NIO","NVDA","MRNA","NKLA","FB","AMD"]
     descriptions = []
     for ticker in tickers:
-        url = f"https://financialmodelingprep.com/api/v3/profile/{ticker}?apikey=14f90359650cd4c61f0f33af0a7564d6"
+        url = f"https://financialmodelingprep.com/api/v3/profile/{ticker}?apikey=a00a6d3cfc063c48037d53f032c818f0"
         result = requests.get(url).json()
         descriptions.append({"symbol":result[0]['symbol'],"name":result[0]['companyName'],"description":result[0]['description']})
     return(descriptions)
