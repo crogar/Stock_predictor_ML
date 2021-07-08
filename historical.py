@@ -19,7 +19,7 @@ def get_tickers():
     return new_df.tolist()
 
 def get_historical_(ticker="AAPL"):
-    url = f"https://financialmodelingprep.com/api/v3/historical-price-full/{ticker}?apikey={api_keys[0]}"
+    url = f"https://financialmodelingprep.com/api/v3/historical-price-full/{ticker}?apikey=235934eabe5c66607b6ed23db85626cf"
     result = requests.get(url).json()
     df = pd.DataFrame(result['historical'])
     print(result['symbol'])
@@ -47,7 +47,7 @@ def get_descriptions():
     tickers =["TSLA","AAPL","AMZN","MSFT","NIO","NVDA","MRNA","NKLA","FB","AMD"]
     descriptions = []
     for ticker in tickers:
-        url = f"https://financialmodelingprep.com/api/v3/profile/{ticker}?apikey=a00a6d3cfc063c48037d53f032c818f0"
+        url = f"https://financialmodelingprep.com/api/v3/profile/{ticker}?apikey=235934eabe5c66607b6ed23db85626cf"
         result = requests.get(url).json()
         descriptions.append({"symbol":result[0]['symbol'],"name":result[0]['companyName'],"description":result[0]['description']})
     return(descriptions)
