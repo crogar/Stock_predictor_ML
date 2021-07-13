@@ -1,5 +1,7 @@
 # FINALPROJECT
 
+You can See the finalized App here -- > [StockPrer App](https://stockprer.herokuapp.com/)
+
 PROJECT REQUIREMENTS:
 Find a Problem worth Solving, Analyzing, or Visualizing
 
